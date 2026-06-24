@@ -1,30 +1,136 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
 <head>
-    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Login</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+```
+
 </head>
+
 <body>
 
-<h1>User Login</h1>
+<div class="container">
 
-{% if error %}
-<p style="color:red;">{{ error }}</p>
-{% endif %}
+```
+<div class="row justify-content-center align-items-center"
+     style="min-height:100vh;">
 
-<form method="POST">
-    {% csrf_token %}
+    <div class="col-md-5">
 
-    <label>Email:</label>
-    <input type="email" name="email" required>
-    <br><br>
+        <div class="glass-card">
 
-    <label>Password:</label>
-    <input type="password" name="password" required>
-    <br><br>
+            <h2 class="text-center mb-4">
+                🔐 Welcome Back
+            </h2>
 
-    <button type="submit">Login</button>
+            <p class="text-center text-light mb-4">
+                Login to continue your placement journey
+            </p>
 
-</form>
+            {% if error %}
+            <div class="alert alert-danger">
+                {{ error }}
+            </div>
+            {% endif %}
+
+            <form method="POST">
+
+                {% csrf_token %}
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Email Address
+                    </label>
+
+                    <input type="email"
+                           name="email"
+                           class="form-control"
+                           placeholder="Enter your email"
+                           required>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Password
+                    </label>
+
+                    <input type="password"
+                           name="password"
+                           class="form-control"
+                           placeholder="Enter your password"
+                           required>
+
+                </div>
+
+                <div class="d-grid">
+
+                    <button type="submit"
+                            class="btn custom-btn">
+
+                        Login
+
+                    </button>
+
+                </div>
+
+            </form>
+
+            <hr>
+
+            <p class="text-center">
+
+                Don't have an account?
+
+                <a href="/register/"
+                   class="text-info">
+
+                    Register
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</div>
+
+<footer class="footer">
+
+```
+<h5>
+    Designed & Developed by Rakshita D ✨
+</h5>
+
+<p>
+    Transforming Placement Preparation with AI 🚀
+</p>
+
+<small>
+    © 2026 AI Placement Portal
+</small>
+```
+
+</footer>
 
 </body>
+
 </html>

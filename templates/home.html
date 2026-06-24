@@ -1,40 +1,157 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-    <title>AI Placement Portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Placement Portal</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
+
 <body>
 
-    <h1>AI Placement Preparation & Resume Analyzer</h1>
+<div class="container">
 
-    <hr>
+```
+<!-- Navbar -->
+<nav class="navbar d-flex justify-content-between">
 
-    <h2>Welcome</h2>
+    <div class="logo">
+        🚀 AI Placement Portal
+    </div>
 
-    <p>
-        Prepare for placements with AI-powered tools.
+    <div>
+        <a href="/login/" class="btn btn-outline-light me-2">
+            Login
+        </a>
+
+        <a href="/register/" class="btn custom-btn">
+            Register
+        </a>
+    </div>
+
+</nav>
+
+<!-- Hero Section -->
+<section class="hero text-center">
+
+    <h1 class="hero-title">
+        Crack Placements Smarter <br>
+        With AI
+    </h1>
+
+    <p class="hero-text">
+        ATS Resume Analysis • Resume Templates • Interview Preparation
     </p>
 
-    <h2>Features</h2>
+    <div class="mt-4">
+        <a href="/register/" class="custom-btn me-3">
+            Get Started
+        </a>
 
-    <ul>
-        <li>AI Resume Analyzer</li>
-        <li>ATS Score Checker</li>
-        <li>Job Recommendations</li>
-        <li>Aptitude Tests</li>
-        <li>DSA Practice</li>
-        <li>Progress Tracking</li>
-        <li>Leaderboard</li>
-        <li>AI Interview Assistant</li>
-    </ul>
+        <a href="/login/" class="btn btn-outline-light">
+            Login
+        </a>
+    </div>
 
-    <br>
+</section>
 
-    <a href="/register/">Register</a>
+<!-- Features -->
+<h2 class="text-center mb-5">
+    Our Features
+</h2>
 
-    <br><br>
+<div class="row g-4">
 
-    <a href="/login/">Login</a>
+    <div class="col-md-4">
+        <div class="glass-card text-center">
+
+            <div class="feature-icon">📄</div>
+
+            <h4 class="mt-3">
+                Resume Analyzer
+            </h4>
+
+            <p>
+                Upload resumes and analyze ATS performance.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="glass-card text-center">
+
+            <div class="feature-icon">📝</div>
+
+            <h4 class="mt-3">
+                Resume Templates
+            </h4>
+
+            <p>
+                Access ATS-friendly templates and Overleaf code.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="glass-card text-center">
+
+            <div class="feature-icon">🎯</div>
+
+            <h4 class="mt-3">
+                Interview Preparation
+            </h4>
+
+            <p>
+                Prepare with curated technical and HR questions.
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- About -->
+<div class="glass-card text-center mt-5">
+
+    <h2>
+        Why Choose AI Placement Portal?
+    </h2>
+
+    <p class="mt-3">
+        A complete platform for students to improve resumes,
+        boost ATS scores, access professional templates,
+        and prepare effectively for placements.
+    </p>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <h5>
+        Designed & Developed by Rakshita D ✨
+    </h5>
+
+    <p>
+        Transforming Placement Preparation with AI 🚀
+    </p>
+
+    <small>
+        © 2026 AI Placement Portal | All Rights Reserved
+    </small>
+
+</footer>
+```
+
+</div>
 
 </body>
 </html>

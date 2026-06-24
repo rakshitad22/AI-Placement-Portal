@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:
+radial-gradient(circle at top left,#00f5ff33,transparent 30%),
+radial-gradient(circle at bottom right,#8b5cf633,transparent 30%),
+linear-gradient(135deg,#0a0f1f,#111827,#1e1b4b);
+
+min-height:100vh;
+color:white;
+
+
+}
+
+
+.navbar{
+padding:20px 0;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+}
+
+.hero{
+padding:80px 0;
+}
+
+.hero-title{
+font-size:60px;
+font-weight:800;
+line-height:1.2;
+}
+
+.hero-text{
+color:#d1d5db;
+font-size:18px;
+margin-top:20px;
+}
+
+.custom-btn{
+background:#00e5ff;
+color;
+border;
+padding:12px 30px;
+border-radius:12px;
+font-weight:600;
+
+box-shadow:
+0 0 10px #00e5ff,
+0 0 20px #00e5ff,
+0 0 40px #00e5ff;
+
+transition:0.3s;
+
+}
+
+.custom-btn{
+transform(-3px);
+color;
+
+box-shadow:
+0 0 20px #00e5ff,
+0 0 40px #00e5ff,
+0 0 80px #00e5ff;
+
+}
+
+.custom-btn:hover{
+color:white;
+}
+
+.glass-card{
+background(255,255,255,0.05);
+border:1px solid rgba(0,229,255,0.3);
+backdrop-filter(15px);
+
+border-radius:20px;
+padding:30px;
+
+box-shadow:
+0 0 15px rgba(0,229,255,0.15);
+
+transition:.3s;
+
+}
+
+.glass-card{
+transform(-8px);
+
+box-shadow:
+0 0 20px rgba(0,229,255,0.4),
+0 0 40px rgba(0,229,255,0.2);
+
+}
+
+.glass-card:hover{
+transform:translateY(-8px);
+}
+
+.feature-icon{
+font-size:45px;
+}
+
+.footer{
+margin-top:80px;
+text-align:center;
+padding:30px;
+border-top:1px solid rgba(255,255,255,0.1);
+}
+
+.footer h5{
+margin-bottom:10px;
+}
+
+.footer p{
+margin-bottom:5px;
+}
+.form-control{
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.2);
+color:white;
+}
+
+.form-control:focus{
+background:rgba(255,255,255,0.12);
+color:white;
+border-color:#00e5ff;
+box-shadow:0 0 15px rgba(0,229,255,0.5);
+}
+
+.form-label{
+color:white;
+font-weight:500;
+}
+.form-control{
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.2);
+color:white;
+}
+
+.form-control::placeholder{
+color:#cbd5e1;
+}
+
+.form-control:focus{
+background:rgba(255,255,255,0.12);
+color:white;
+border-color:#00e5ff;
+box-shadow:0 0 15px rgba(0,229,255,0.5);
+}
+
+.form-label{
+color:white;
+font-weight:500;
+}

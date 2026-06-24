@@ -39,3 +39,5 @@ def login(request):
             })
 
     return render(request, 'login.html')
+def resume_templates(request):
+    return render(request, 'resume_templates.html')
